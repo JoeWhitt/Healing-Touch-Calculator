@@ -87,23 +87,23 @@ def CalculateHT():
     lblTxt.set("Enter your total healing power:") #Reset the text after typing a valid number
     healpower = txtBox.get()
     if (healpower.isnumeric()) == True:
-        HTmin = round(376 + (int(txtBox.get()) * .857)) #Rank 4, 85.7% Spellpower Coefficient
+        HTmin = round(376 + (int(txtBox.get()) * .857)) #Rank 4, 376-459 with 85.7% Spellpower Coefficient
         HTmax = round(459 + (int(txtBox.get()) * .857))
         lblTxtHT4.set(int((HTmin + HTmax) / 2))
 
-        HTmin = round(589 + (int(txtBox.get()))) #Rank 5, 100% Spellpower Coefficient
+        HTmin = round(589 + (int(txtBox.get()))) #Rank 5, 589-712 with 100% Spellpower Coefficient
         HTmax = round(712 + (int(txtBox.get())))
         lblTxtHT5.set(int((HTmin + HTmax) / 2))
 
-        HTmin = round(762 + (int(txtBox.get()))) #Rank 6, 100% Spellpower Coefficient
+        HTmin = round(762 + (int(txtBox.get()))) #Rank 6, 762-914 with 100% Spellpower Coefficient
         HTmax = round(914 + (int(txtBox.get())))
         lblTxtHT6.set(int((HTmin + HTmax) / 2))
         
-        HTmin = round(958 + (int(txtBox.get()))) #Rank 7, 100% Spellpower Coefficient
+        HTmin = round(958 + (int(txtBox.get()))) #Rank 7, 985-1143 with 100% Spellpower Coefficient
         HTmax = round(1143 + (int(txtBox.get())))
         lblTxtHT7.set(int((HTmin + HTmax) / 2))
         
-        HTmin = round(1225 + (int(txtBox.get()))) #Rank 8, 100% Spellpower Coefficient
+        HTmin = round(1225 + (int(txtBox.get()))) #Rank 8, 1225-1453 with 100% Spellpower Coefficient
         HTmax = round(1453 + (int(txtBox.get())))
         lblTxtHT8.set(int((HTmin + HTmax) / 2))
     else:
