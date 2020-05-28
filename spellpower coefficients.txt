@@ -1,0 +1,14 @@
+Healing Touch
+
+Rank 1: 40-55 with 12.3%
+Rank 2: 94-119 with 31.4%
+Rank 3: 204-253 with 55.4%
+Rank 4: 376-459 with 85.7%
+Rank 5: 589-712 all others 100%
+Rank 6: 762-914
+Rank 7: 958-1143
+Rank 8: 1225-1453
+Rank 9: 1545-1826
+Rank 10: 1916-2257
+
+Rejuvenation - 12/15 - 80% - 20% per tick (4)
