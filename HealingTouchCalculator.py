@@ -48,7 +48,7 @@ def CalculateHT():
         HTmax = round(459 + (int(txtBox.get()) * .857))
         lblTxtHT4.set(int((HTmin + HTmax) / 2))
 
-        HTmin = round(589 + (int(txtBox.get()))) #Rank 5, 85.7% Spellpower Coefficient
+        HTmin = round(589 + (int(txtBox.get()))) #Rank 5, 100% Spellpower Coefficient
         HTmax = round(712 + (int(txtBox.get())))
         lblTxtHT5.set(int((HTmin + HTmax) / 2))
     else:
