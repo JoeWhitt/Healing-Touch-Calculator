@@ -39,6 +39,10 @@ lblHT5.grid(column=1, row=4, padx=5, pady=5)
 #Entry Box
 txtBox = Entry(window)
 txtBox.grid(column=0, row=1, padx=5, pady=5)
+
+
+
+
 	
 def CalculateHT():
     lblTxt.set("Enter your total healing power:") #Reset the text after typing a valid number
