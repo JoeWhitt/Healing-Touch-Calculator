@@ -20,9 +20,9 @@ lbl = Label(window, textvariable=lblTxt)
 lbl.grid(column=0, row=0, padx=5, pady=5)
 
 #Healing Touch Rank 4 text label
-lblTxt2 = StringVar()
-lblTxt2.set("Average HT4 Amount:")
-lbl = Label(window, textvariable=lblTxt2)
+lblTxt7 = StringVar()
+lblTxt7.set("Average HT4 Amount:")
+lbl = Label(window, textvariable=lblTxt7)
 lbl.grid(column=0, row=3, padx=5, pady=5)
 
 #Healing Touch Rank 4 number label
@@ -31,9 +31,9 @@ lblHT4 = Label(window, textvariable=lblTxtHT4)
 lblHT4.grid(column=1, row=3, padx=5, pady=5)
 
 #Healing Touch Rank 5 text label
-lblTxt2 = StringVar()
-lblTxt2.set("Average HT5 Amount:")
-lbl = Label(window, textvariable=lblTxt2)
+lblTxt5 = StringVar()
+lblTxt5.set("Average HT5 Amount:")
+lbl = Label(window, textvariable=lblTxt5)
 lbl.grid(column=0, row=4, padx=5, pady=5)
 
 #Healing Touch Rank 5 number label
@@ -42,9 +42,9 @@ lblHT5 = Label(window, textvariable=lblTxtHT5)
 lblHT5.grid(column=1, row=4, padx=5, pady=5)
 
 #Healing Touch Rank 6 text label
-lblTxt3 = StringVar()
-lblTxt3.set("Average HT6 Amount:")
-lbl = Label(window, textvariable=lblTxt3)
+lblTxt6 = StringVar()
+lblTxt6.set("Average HT6 Amount:")
+lbl = Label(window, textvariable=lblTxt6)
 lbl.grid(column=0, row=5, padx=5, pady=5)
 
 #Healing Touch Rank 6 number label
@@ -53,9 +53,9 @@ lblHT6 = Label(window, textvariable=lblTxtHT6)
 lblHT6.grid(column=1, row=5, padx=5, pady=5)
 
 #Healing Touch Rank 7 text label
-lblTxt4 = StringVar()
-lblTxt4.set("Average HT7 Amount:")
-lbl = Label(window, textvariable=lblTxt4)
+lblTxt7 = StringVar()
+lblTxt7.set("Average HT7 Amount:")
+lbl = Label(window, textvariable=lblTxt7)
 lbl.grid(column=0, row=6, padx=5, pady=5)
 
 #Healing Touch Rank 7 number label
@@ -64,15 +64,37 @@ lblHT7 = Label(window, textvariable=lblTxtHT7)
 lblHT7.grid(column=1, row=6, padx=5, pady=5)
 
 #Healing Touch Rank 8 text label
-lblTxt5 = StringVar()
-lblTxt5.set("Average HT8 Amount:")
-lbl = Label(window, textvariable=lblTxt5)
+lblTxt8 = StringVar()
+lblTxt8.set("Average HT8 Amount:")
+lbl = Label(window, textvariable=lblTxt8)
 lbl.grid(column=0, row=7, padx=5, pady=5)
 
 #Healing Touch Rank 8 number label
 lblTxtHT8 = StringVar()
 lblHT8 = Label(window, textvariable=lblTxtHT8)
 lblHT8.grid(column=1, row=7, padx=5, pady=5)
+
+#Healing Touch Rank 9 text label
+lblTxt9 = StringVar()
+lblTxt9.set("Average HT9 Amount:")
+lbl = Label(window, textvariable=lblTxt9)
+lbl.grid(column=0, row=8, padx=5, pady=5)
+
+#Healing Touch Rank 9 number label
+lblTxtHT9 = StringVar()
+lblHT9 = Label(window, textvariable=lblTxtHT9)
+lblHT9.grid(column=1, row=8, padx=5, pady=5)
+
+#Healing Touch Rank 10 text label
+lblTxt10 = StringVar()
+lblTxt10.set("Average HT10 Amount:")
+lbl = Label(window, textvariable=lblTxt10)
+lbl.grid(column=0, row=9, padx=5, pady=5)
+
+#Healing Touch Rank 10 number label
+lblTxtHT10 = StringVar()
+lblHT10 = Label(window, textvariable=lblTxtHT10)
+lblHT10.grid(column=1, row=9, padx=5, pady=5)
 
 #Entry Box
 txtBox = Entry(window)
@@ -106,6 +128,14 @@ def CalculateHT():
         HTmin = round(1225 + (int(txtBox.get()))) #Rank 8, 1225-1453 with 100% Spellpower Coefficient
         HTmax = round(1453 + (int(txtBox.get())))
         lblTxtHT8.set(int((HTmin + HTmax) / 2))
+
+        HTmin = round(1545 + (int(txtBox.get()))) #Rank 9, 1545-1826 with 100% Spellpower Coefficient
+        HTmax = round(1826 + (int(txtBox.get())))
+        lblTxtHT9.set(int((HTmin + HTmax) / 2))
+
+        HTmin = round(1916 + (int(txtBox.get()))) #Rank 10, 1916-2257 with 100% Spellpower Coefficient
+        HTmax = round(2257 + (int(txtBox.get())))
+        lblTxtHT10.set(int((HTmin + HTmax) / 2))
     else:
         lblTxt.set("Invalid Input!")
 
