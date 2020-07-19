@@ -84,7 +84,7 @@ txtBox.grid(column=0, row=1, padx=5, pady=5)
 #Main Calculation Function#
 ########################### 	
 def CalculateHT():
-    lblTxt.set("Enter your total healing power:") #Reset the text after typing a valid number
+    lblTxt.set("Enter your total healing power:") #Reset the text after typing a valid number.
     healpower = txtBox.get()
     if (healpower.isnumeric()) == True:
         HTmin = round(376 + (int(txtBox.get()) * .857)) #Rank 4, 376-459 with 85.7% Spellpower Coefficient
